@@ -9,7 +9,7 @@ on:
     
 env:  
   JAVA_VERSION: '8'
-  MAVEN_RUN_COMMAND: mvn -B package --file pom.xml -Dmaven.test.skip=true
+  MAVEN_RUN_COMMAND: mvn -B package --file pom.xml
   AZURE_WEBAPP: 'new-javaapp'
 
 jobs:
@@ -39,7 +39,7 @@ jobs:
       run: mvn -B clean package
       
     - name: Mvn verify
-      run: mvn -B clean verify -DskipTests
+      run: mvn -B clean verify 
   
     - name: Upload artifact for deployment job
       uses: actions/upload-artifact@v2
