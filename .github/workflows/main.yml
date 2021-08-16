@@ -9,7 +9,7 @@ on:
     
 env:  
   JAVA_VERSION: '11'
-  MAVEN_RUN_COMMAND: mvn -B package --file pom.xml
+  MAVEN_RUN_COMMAND: mvn clean install
   AZURE_WEBAPP: 'new-javaapp'
 
 jobs:
