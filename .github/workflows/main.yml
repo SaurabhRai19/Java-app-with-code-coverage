@@ -8,7 +8,7 @@ on:
     types: [opened, synchronize, reopened]
     
 env:  
-  JAVA_VERSION: '8'
+  JAVA_VERSION: '11'
   MAVEN_RUN_COMMAND: mvn -B package --file pom.xml
   AZURE_WEBAPP: 'new-javaapp'
 
