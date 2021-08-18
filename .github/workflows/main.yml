@@ -1,4 +1,4 @@
-name: Practice Spring Boot Java Web App with Code Coverage Analysis
+name: Practice Spring Boot Java Web App with Code Coverage 
 
 on:
   push:
